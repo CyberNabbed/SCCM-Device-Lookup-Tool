@@ -1,5 +1,7 @@
 # SCCM Quick Asset Lookup
 
+![SCCM Device SN Lookup](https://github.com/CyberNabbed/SCCM-Device-Lookup-Tool/blob/main/Device%20SN%20Lookup.png?raw=true)
+
 I wrote this script because I was tired of waiting 5 minutes for the full Configuration Manager console to load just to look up a serial number for a machine.
 
 This tool runs in a standard PowerShell window. It hits the **AdminService** API directly (WMI over HTTPS), effectively bypassing the console to get you data instantly.
@@ -18,7 +20,7 @@ This tool runs in a standard PowerShell window. It hits the **AdminService** API
 You need to edit the top of the script with your specific server details before running it.
 
 Open the script and look for lines 15-16:
-
 ```powershell
 [string]$Provider = "YOUR_SMS_PROVIDER_FQDN", # Put your server name here
 [string]$SiteCode = "XYZ"                     # Put your Site Code here (e.g. PS1)
+```
